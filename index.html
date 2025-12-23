@@ -3,92 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي العصري مثل TikTok</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000; /* خلفية داكنة مثل TikTok */
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-        }
-        .section {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            scroll-snap-align: start;
-            background: linear-gradient(45deg, #ff0050, #00f2ea); /* تدرج ألوان عصري */
-            position: relative;
-        }
-        .section h1 {
-            font-size: 3em;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .products {
-            /* قسم فارغ للمنتجات - أضف محتواك هنا */
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            margin: 20px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #111;
-        }
-    </style>
+    <title>متجر عصري | Premium Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- قسم الترحيب -->
-        <div class="section">
-            <h1>مرحبا بك في موقعي العصري!</h1>
-            <p>تصميم سريع وديناميكي مثل TikTok.</p>
+
+    <header class="hero">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="#">المتجر</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#">لووك بوك</a></li>
+            </ul>
+        </nav>
+        <div class="overlay">
+            <h1>PREMIUM BRAND</h1>
+            <p>تصميمات مخصصة لعالم الموضة</p>
         </div>
-        
-        <!-- قسم المنتجات الفارغ -->
-        <div class="section">
-            <div class="products">
-                <!-- هنا المكان الفارغ للمنتجات - أضف صور، أسماء، أسعار، إلخ -->
-                <h2>المنتجات</h2>
-                <!-- مثال: <div class="product"><img src="product1.jpg" alt="منتج 1"><p>وصف المنتج</p></div> -->
-                <!-- أضف منتجاتك هنا -->
+    </header>
+
+    <section class="products">
+        <h2>أحدث التشكيلات</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="منتج">
+                <h3>تيشرت عصري - 1</h3>
+                <p>450 EGP</p>
+                <button class="add-btn">أضف للسلة</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="منتج">
+                <h3>هودي كلاسيك - 2</h3>
+                <p>600 EGP</p>
+                <button class="add-btn">أضف للسلة</button>
             </div>
         </div>
-        
-        <!-- قسم آخر للإلهام -->
-        <div class="section">
-            <h1>استمتع بالتصفح!</h1>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <p>© 2023 موقعي. جميع الحقوق محفوظة.</p>
-    </div>
+    </section>
 
-    <script>
-        // JavaScript بسيط لجعل التمرير أكثر سلاسة مثل TikTok
-        document.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            window.scrollBy({
-                top: e.deltaY > 0 ? window.innerHeight : -window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
 </html>
