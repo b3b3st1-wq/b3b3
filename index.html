@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>b3b3 store</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional: Fallback font loading -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Scene: stars -->
+  <div id="stars" aria-label="stars background" role="img"></div>
 
-  <!-- stars background -->
-  <div class="stars"></div>
+  <!-- Snow layer -->
+  <div id="snow"></div>
 
-  <!-- snow -->
-  <canvas id="snow"></canvas>
+  <!-- Top header text -->
+  <header class="topbar" aria-label="brand header">
+    <div class="brand-text">b3b3 store</div>
+  </header>
 
-  <!-- brand -->
-  <div class="brand">b3b3 store</div>
+  <!-- Center stage -->
+  <main class="stage" aria-label="main stage">
+    <button id="enterBtn" class="enter-glass" aria-label="Enter">
+      ENTER
+    </button>
+  </main>
 
-  <!-- center -->
-  <div class="center">
-    <a href="#" class="enter">ENTER</a>
-  </div>
-
-  <!-- empty products -->
-  <section class="products"></section>
+  <!-- Optional: empty products section (kept as a placeholder) -->
+  <section id="products" aria-label="products" class="products-section">
+    <!-- Intentionally left empty for future product content -->
+  </section>
 
   <script src="script.js"></script>
 </body>
